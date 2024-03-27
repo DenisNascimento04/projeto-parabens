@@ -21,6 +21,11 @@
     "jsx": "react-jsx"
   },
   "include": [
+    "next-env.d.ts",
+    "svg.d.ts",
     "src"
-  ]
+  ],
+  "paths": {
+    "@/images/*": ["images/*"]
+  }
 }
