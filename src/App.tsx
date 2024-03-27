@@ -9,56 +9,56 @@ import { Fogos } from './components/Fogos';
 
 function App() {
 
-  const { register, handleSubmit, formState:{ errors }} = useForm();
+  // const { register, handleSubmit, formState:{ errors }} = useForm();
 
-  const [dataFin, setDataFin] = useState("");
-  const [stateTimer, setStateTimer] = useState(false);
+  // const [dataFin, setDataFin] = useState("");
+  // const [stateTimer, setStateTimer] = useState(false);
 
-  const [days, hour, minute, seconds] = useTime(dataFin, stateTimer);
-  const [showDefinir, setShowDefinir] = useState(true);
-  const [showTimer, setShowTimer] = useState(false);
-  const [showComemora, setShowComemora] = useState(false);
+  // const [days, hour, minute, seconds] = useTime(dataFin, stateTimer);
+  // const [showDefinir, setShowDefinir] = useState(true);
+  // const [showTimer, setShowTimer] = useState(false);
+  // const [showComemora, setShowComemora] = useState(false);
 
-  const frases = [
-    `Que este novo ano traga consigo toda a felicidade e 
-    realizações que você merece. Parabéns pelo seu dia especial!`,
-    `Hoje celebramos não apenas seu nascimento, mas também a luz e a 
-    alegria que você trouxe para sua família. Feliz aniversário!`,
-    `Neste dia tão especial, desejo que você receba todo o amor e 
-    carinho que você compartilha com o mundo. Feliz aniversário!`,
-    `Que seu aniversário seja tão radiante quanto o seu sorriso e 
-    tão cheio de surpresas quanto os seus sonhos. Parabéns e celebre em grande estilo!`
-  ];
+  // const frases = [
+  //   `Que este novo ano traga consigo toda a felicidade e 
+  //   realizações que você merece. Parabéns pelo seu dia especial!`,
+  //   `Hoje celebramos não apenas seu nascimento, mas também a luz e a 
+  //   alegria que você trouxe para sua família. Feliz aniversário!`,
+  //   `Neste dia tão especial, desejo que você receba todo o amor e 
+  //   carinho que você compartilha com o mundo. Feliz aniversário!`,
+  //   `Que seu aniversário seja tão radiante quanto o seu sorriso e 
+  //   tão cheio de surpresas quanto os seus sonhos. Parabéns e celebre em grande estilo!`
+  // ];
 
-  const onSubmit = (data: any) => {
-    const now = new Date();
-    const textDate = `${data.mes}-${data.dia}-${now.getFullYear()}-23:59:59`;
-    const date = new Date(textDate);
-    if (date > now) {
-      setDataFin(textDate);
-      setStateTimer(true);
-      setTimeout(() => {
-        setShowDefinir(false);
-        setShowTimer(true);
-      }, 500);
-    }else{
-      setDataFin(`${data.mes}-${data.dia}-${now.getFullYear()+1}-23:59:59`)
-      setStateTimer(true);
-      setShowDefinir(false);
-      setShowTimer(true);
-    }
-  }
+  // const onSubmit = (data: any) => {
+  //   const now = new Date();
+  //   const textDate = `${data.mes}-${data.dia}-${now.getFullYear()}-23:59:59`;
+  //   const date = new Date(textDate);
+  //   if (date > now) {
+  //     setDataFin(textDate);
+  //     setStateTimer(true);
+  //     setTimeout(() => {
+  //       setShowDefinir(false);
+  //       setShowTimer(true);
+  //     }, 500);
+  //   }else{
+  //     setDataFin(`${data.mes}-${data.dia}-${now.getFullYear()+1}-23:59:59`)
+  //     setStateTimer(true);
+  //     setShowDefinir(false);
+  //     setShowTimer(true);
+  //   }
+  // }
 
-  const comemorar = () => {
-    setShowTimer(false);
-    setStateTimer(false);
-    setShowComemora(true);
-  }
+  // const comemorar = () => {
+  //   setShowTimer(false);
+  //   setStateTimer(false);
+  //   setShowComemora(true);
+  // }
 
   return (
     <Container>
       <img src={IMtop} className="image-wave-top" alt="logo" />
-      <Content>
+      {/* <Content>
         {showDefinir && 
           <Definir>
             <h1>Coloque o dia do seu aniversário</h1>
@@ -141,7 +141,7 @@ function App() {
             </div>
           </Comemoracao>
         }
-      </Content>
+      </Content> */}
       <img src={IMbottom} className="image-wave-bottom" alt="logo" />
     </Container>
   );
