@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/DenisNascimento04/projeto-parabens.git/static/css/main.ddb21b46.css",
+    "main.js": "/DenisNascimento04/projeto-parabens.git/static/js/main.cb180b2a.js",
+    "static/js/787.a303ed58.chunk.js": "/DenisNascimento04/projeto-parabens.git/static/js/787.a303ed58.chunk.js",
+    "static/media/bolo.svg": "/DenisNascimento04/projeto-parabens.git/static/media/bolo.6c22b1ef1b05053e98b21f259ea8c0f6.svg",
+    "index.html": "/DenisNascimento04/projeto-parabens.git/index.html",
+    "static/media/top-image.svg": "/DenisNascimento04/projeto-parabens.git/static/media/top-image.2802a8248cc6a56c65dcec2866b27a09.svg",
+    "static/media/bottom-image.svg": "/DenisNascimento04/projeto-parabens.git/static/media/bottom-image.be931b02443fbe4a8edf370b745c9f75.svg",
+    "main.ddb21b46.css.map": "/DenisNascimento04/projeto-parabens.git/static/css/main.ddb21b46.css.map",
+    "main.cb180b2a.js.map": "/DenisNascimento04/projeto-parabens.git/static/js/main.cb180b2a.js.map",
+    "787.a303ed58.chunk.js.map": "/DenisNascimento04/projeto-parabens.git/static/js/787.a303ed58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddb21b46.css",
+    "static/js/main.cb180b2a.js"
+  ]
+}
