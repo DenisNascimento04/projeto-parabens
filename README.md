@@ -5,7 +5,7 @@ Este projeto foi inspirado pelo projeto Countdown da Rocketseat.
 ## 🚀 Começando
 O objetivo original desse projeto era criar uma contagem regressiva para o lançamento de um foguete. Apesar de ter sido um desafio inicialmente, após a conclusão da logica sentia que o projeta estava um tanto simples.
 
-Decidi transformar em uma contagem regressiva para o aniversário de quem acessar. Passando uma data o site calcula quantos dias, horas, minutos e segundo para esta data e começa a contar, se a data passada for a data de hoje será mostrada a tela de Parabéns.
+Decidi transformar em uma contagem regressiva para o aniversário de quem acessar. Passando uma data o site calcula quantos dias, horas, minutos e segundos para esta data e começa a contar, se a data passada for a data de hoje será mostrada a tela de Parabéns.
 
 O projeto passa por três fases, a de “Definição”, onde temos um formulário simples feito com react-hook-form para a coleta da data, o “Timer”, que inicia uma função que faz o cálculo de dias, horas, etc e da início a contagem, e a “Comemoração”, onde é mostrada uma mensagem de parabéns aleatória.
 
