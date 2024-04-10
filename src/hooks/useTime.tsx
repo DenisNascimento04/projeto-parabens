@@ -9,6 +9,7 @@ export function useTime(date: string, state: boolean){
     const timer = () => {
         const countDate = new Date(date).getTime();
         const now = new Date().getTime();
+        // console.log(countDate+"/"+now);
         if (countDate <= now || !state) {
             setDays(0);
             setHour(0);

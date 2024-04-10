@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #fff;
   /* background-color: #000; */
   .image-wave-top{
     position: absolute;
@@ -85,6 +85,11 @@ export const Definir = styled.div`
     color: #fff;
     border: 0;
     cursor: pointer;
+    transition: all .5s;
+  }
+  button:hover{
+    box-shadow: var(--purple) 0 1px 20px;
+    transition-duration: .1s;
   }
   @media screen and (max-width: 425px){
     h1{
@@ -183,9 +188,15 @@ export const Timer = styled.div`
     border: 0;
     cursor: pointer;
   }
+  .botao:hover{
+    box-shadow: var(--purple) 0 1px 20px;
+    transition-duration: .1s;
+  }
+
   @media screen and (max-width: 425px){
     .title{
       font-size: 2rem;
+      text-align: center;
     }
     .relogio{
       .titles{

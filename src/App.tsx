@@ -32,20 +32,29 @@ function App() {
 
   const onSubmit = (data: any) => {
     const now = new Date();
-    const textDate = `${data.mes}-${data.dia}-${now.getFullYear()}-23:59:59`;
+    const textDate = `${data.mes}-${data.dia}-${now.getFullYear()}`;
     const date = new Date(textDate);
-    if (date > now) {
-      setDataFin(textDate);
-      setStateTimer(true);
-      setTimeout(() => {
+    if(
+      date.getDate() === now.getDate() &&
+      date.getMonth() === now.getMonth() &&
+      date.getFullYear() === now.getFullYear()
+    ){
+      setShowDefinir(false)
+      setShowComemora(true);
+    }else{
+      if (date > now) {
+        setDataFin(textDate);
+        setStateTimer(true);
+        setTimeout(() => {
+          setShowDefinir(false);
+          setShowTimer(true);
+        }, 500);
+      }else{
+        setDataFin(`${data.mes}-${data.dia}-${now.getFullYear()+1}-23:59:59`)
+        setStateTimer(true);
         setShowDefinir(false);
         setShowTimer(true);
-      }, 500);
-    }else{
-      setDataFin(`${data.mes}-${data.dia}-${now.getFullYear()+1}-23:59:59`)
-      setStateTimer(true);
-      setShowDefinir(false);
-      setShowTimer(true);
+      }
     }
   }
 
